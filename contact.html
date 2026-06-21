@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Smartmen Training College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Smartmen Training College</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero hero-contact overflow-hidden" style="background-image:url('https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-white" data-aos="fade-up">
+        <small class="text-uppercase text-primary tracking-wider">Get in touch</small>
+        <h1>Contact Our Admissions and Support Teams</h1>
+        <p class="mt-4">We’re here to answer questions about courses, enrollment, and campus support services.</p>
+      </div>
+    </section>
+
+    <section class="section-light section-padding">
+      <div class="container">
+        <div class="row gx-5 gy-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-panel rounded-4 shadow-soft p-5 bg-white">
+              <h2>Contact Information</h2>
+              <p class="mt-3">Reach our team via phone, WhatsApp, or send a message using the contact form.</p>
+              <div class="contact-details mt-4">
+                <p><i class="fa-solid fa-phone text-primary me-3"></i>0712045119</p>
+                <p><i class="fa-brands fa-whatsapp text-success me-3"></i><a href="https://wa.me/255712045119">Chat on WhatsApp</a></p>
+                <p><i class="fa-solid fa-envelope text-primary me-3"></i>info@smartmen.ac.tz</p>
+                <p><i class="fa-solid fa-location-dot text-primary me-3"></i>Dar es Salaam, Tanzania</p>
+              </div>
+              <div class="map-frame rounded-4 overflow-hidden mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.86611838166!2d39.263298075353!3d-6.792354595046738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b7df7ecf7f9%3A0x123456789abcdef!2sDar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1700000000000!5m2!1sen!2stz" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="glass-panel p-5 rounded-4 shadow-soft">
+              <h3>Send us a message</h3>
+              <form id="contactPageForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com" required>
+                    <div class="invalid-feedback">Enter a valid email.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="contactPhone" placeholder="0712 045 119" pattern="[0-9]{10,15}" required>
+                    <div class="invalid-feedback">Enter a valid phone number.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="contactSubject" placeholder="Course inquiry" required>
+                    <div class="invalid-feedback">Please add a subject.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="How can we help you?" required></textarea>
+                    <div class="invalid-feedback">Write your message.</div>
+                  </div>
+                  <div class="col-12 text-end mt-3">
+                    <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-dark">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <h5>Smartmen Training College</h5>
+          <p>Contact us for personalized admission support, course guidance, and learning opportunities.</p>
+        </div>
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <h6>Contact</h6>
+          <p><i class="fa-solid fa-phone me-2"></i>0712045119</p>
+          <p><i class="fa-solid fa-envelope me-2"></i>info@smartmen.ac.tz</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <h6>Follow Us</h6>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 border-top pt-4">
+        <p>© 2026 Smartmen Training College. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/255712045119" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
