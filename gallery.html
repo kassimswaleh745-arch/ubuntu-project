@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Smartmen Training College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Smartmen Training College</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero hero-gallery overflow-hidden" style="background-image:url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-white" data-aos="fade-up">
+        <small class="text-uppercase text-primary tracking-wider">Campus life</small>
+        <h1>Visual stories from Smartmen training experiences</h1>
+        <p class="mt-4">Browse a gallery of creative classrooms, studio sessions, and student achievements.</p>
+      </div>
+    </section>
+
+    <section class="section-light section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <small class="text-primary text-uppercase">Gallery</small>
+          <h2>Our studio, classroom and campus moments</h2>
+        </div>
+        <div class="gallery-grid" data-aos="fade-up">
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80" alt="Studio classroom"></div>
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Editing session"></div>
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Design workshop"></div>
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Training session"></div>
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80" alt="Photography course"></div>
+          <div class="gallery-item" data-image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Student collaboration"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+      <div class="lightbox-content rounded-4 shadow-soft">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery preview"><i class="fa-solid fa-xmark"></i></button>
+        <img src="" alt="Gallery preview" id="lightboxImage">
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer section-dark">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <h5>Smartmen Training College</h5>
+          <p>Premium creative training with modern studio resources and hands-on media education.</p>
+        </div>
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <h6>Contact</h6>
+          <p><i class="fa-solid fa-phone me-2"></i>0712045119</p>
+          <p><i class="fa-solid fa-envelope me-2"></i>info@smartmen.ac.tz</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <h6>Follow Us</h6>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 border-top pt-4">
+        <p>© 2026 Smartmen Training College. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/255712045119" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
